@@ -1,4 +1,4 @@
-# 📊 Expense Tracker App
+# 📊 Chelete Tracker App
 
 The **Expense Tracker App** is an Android application designed to help users manage personal finances by tracking expenses, setting monthly budgets, viewing visual spending charts, and generating reports. Built with a clean UI and powerful features, it uses Room Database for data persistence and follows the MVVM architecture.
 
