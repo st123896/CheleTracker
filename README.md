@@ -176,6 +176,9 @@ References:
 
 -Source :Head First Android Development A Brain-Friendly Guide, 2nd Edition
 
+
+-PhilJay. (2024). MPAndroidChart - Powerful & easy to use chart library for Android. GitHub. Available at: https://github.com/PhilJay/MPAndroidChart
+------------------------------------------------------------------------------
 Author
 
 -Your Name - Tshepiso Zikhali
