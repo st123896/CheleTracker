@@ -126,6 +126,11 @@ Material Components
 
 
 
+
+
+
+
+
 📚 Usage
 -Register or Login
 
@@ -138,3 +143,34 @@ Material Components
 -Track achievements and view spending reports
 
 -Export reports as PDFs and review progress charts
+
+
+
+
+
+
+
+
+📝 License
+-This project is licensed under the MIT License – see the LICENSE file for details.
+
+
+
+
+
+
+🙌 Acknowledgements
+-MPAndroidChart by PhilJay
+
+-Glide by Bumptech
+
+-Android Jetpack & Material Design Components
+
+
+
+
+
+
+
+
+
