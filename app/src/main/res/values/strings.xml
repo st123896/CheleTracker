@@ -1,0 +1,83 @@
+<resources>
+    <string name="app_name">Chelete Tracker</string>
+    <string name="budget_not_set">Your Budget: Not set</string>
+    <string name="budget_range_format">Your Budget: R%1$s - R%2$s</string>
+    <string name="budget_status_format">Current spending: $%1$s (%2$d%% of budget)</string>
+    <string name="enter_both_values">Please enter both values</string>
+    <string name="max_greater_than_min">Max must be greater than min</string>
+    <string name="budget_saved">Budget goals saved</string>
+    <string name="achievement_budget_title">Budget Master</string>
+    <string name="achievement_budget_desc">Stayed within budget for the month</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="graph_title">Spending Graph</string>
+    <string name="select_date_range">Select Date Range</string>
+    <string name="start_date">Start Date</string>
+    <string name="end_date">End Date</string>
+    <string name="no_data_available">No data available for selected period</string>
+
+    <!-- Achievements Fragment Strings -->
+    <string name="achievements_title">Your Achievements</string>
+    <string name="progress_title">Your Progress</string>
+    <string name="achieved">Achieved: </string>
+    <string name="total">Total: </string>
+    <string name="no_achievements_title">No Achievements Yet</string>
+    <string name="no_achievements_message">Complete challenges to earn badges and track your progress!</string>
+    <string name="earned_on">Earned on %s</string>
+    <string name="progress_format">%d/%d</string>
+    <string name="common">COMMON</string>
+    <string name="rare">RARE</string>
+    <string name="epic">EPIC</string>
+
+    <string name="no_achievements_subtitle">Complete financial goals to unlock badges and rewards</string>
+    <string name="learn_how_to_earn">Learn How to Earn</string>
+    <string name="achievement_icon">Achievement icon</string>
+
+    <string name="earned_on_date">Earned on %1$s</string>
+
+    <!-- strings.xml -->
+    <string name="filter">Filter</string>
+    <string name="all_achievements">All Achievements</string>
+    <string name="earned">Earned</string>
+    <string name="locked">Locked</string>
+    <string name="budget_goals">Budget Goals</string>
+    <string name="streaks">Streaks</string>
+    <string name="sort">Sort</string>
+    <string name="newest_first">Newest First</string>
+    <string name="oldest_first">Oldest First</string>
+    <string name="rarity">By Rarity</string>
+    <string name="a_z">A-Z</string>
+    <string name="about_achievements">About Achievements</string>
+    <string name="refresh">Refresh</string>
+
+    <string name="achievements">Achievements</string>
+    <string name="achievements_info_message">Information about achievements system</string>
+    <string name="got_it">Got it</string>
+
+
+    <string name="progress_label">Progress:</string>
+    <string name="calendar_icon_desc">Calendar icon</string>
+    <string name="status_icon_desc">Status icon</string>
+
+
+    <string name="calendar_icon">Calendar icon</string>
+    <string name="status_icon">Status icon</string>
+
+    <string name="channel_name">Expense Notifications</string>
+    <string name="channel_description">Notifications for expense tracking</string>
+
+    <string name="expense_notification_title">Expense Notification</string>
+    <string name="dismiss">Dismiss</string>
+
+    <string name="amount_format">R%s</string>
+    <string name="new_expense_added">New Expense Added</string>
+    <string name="expense_content_text">%1$s: R%2$s</string>
+    <string name="expense_details">Category: %1$s\nAmount: R%2$s\nDate: %3$s\nTime: %4$s</string>
+
+    <string name="app_logo_desc">Chalet Tracker Logo</string>
+    <string name="welcome_back">Welcome Back</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="dont_have_account">Don\'t have an account?</string>
+    <string name="register">Register</string>
+</resources>

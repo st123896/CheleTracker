@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".AddExpenseActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/surfaceContainerLowest">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/background"
+            app:navigationIcon="@drawable/ic_menu"
+            app:title="Add Expense"
+            app:titleTextColor="@color/primaryDark"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:fillViewport="true"
+            app:layout_constraintTop_toBottomOf="@id/toolbar"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="24dp">
+
+                <!-- Amount Input -->
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    app:startIconDrawable="@drawable/ic_currency"
+                    app:startIconTint="@color/primaryColor"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    app:boxBackgroundColor="@color/surfaceContainerLowest"
+                    app:hintTextColor="@color/black"
+                    app:boxStrokeColor="@color/outline">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/etAmount"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="      Amount"
+                        android:textColor="@color/onSurface"
+                        android:inputType="numberDecimal"
+                        android:textSize="16sp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <!-- Description Input -->
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    app:startIconDrawable="@drawable/ic_description"
+                    app:startIconTint="@color/primaryColor"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    app:boxBackgroundColor="@color/surfaceContainerLowest"
+                    app:hintTextColor="@color/black"
+                    app:boxStrokeColor="@color/outline">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/etDescription"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="    Description"
+                        android:textColor="@color/onSurface"
+                        android:textSize="16sp"
+                        tools:ignore="HardcodedText" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <!-- Category Spinner -->
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    app:startIconDrawable="@drawable/ic_category"
+                    app:startIconTint="@color/primaryColor"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    app:boxBackgroundColor="@color/surfaceContainerLowest"
+                    app:hintTextColor="@color/black"
+                    app:boxStrokeColor="@color/outline">
+
+                    <Spinner
+                        android:id="@+id/spinnerCategory"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:paddingVertical="16dp"
+                        android:textSize="16sp"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <!-- Date Selection -->
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    app:startIconDrawable="@drawable/ic_calendar"
+                    app:startIconTint="@color/primaryColor"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    app:boxBackgroundColor="@color/surfaceContainerLowest"
+                    app:hintTextColor="@color/black"
+                    app:boxStrokeColor="@color/outline">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/tvSelectedDate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/onSurface"
+                        android:hint="Select Date"
+                        android:focusable="false"
+                        android:clickable="true"
+                        android:textSize="16sp"
+                        tools:text="June 22, 2023"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <!-- Photo Section -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Receipt Photo"
+                    android:textColor="@color/onSurfaceVariant"
+
+                    android:textSize="14sp"
+                    android:layout_marginBottom="8dp"/>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_marginBottom="24dp"
+                    app:cardCornerRadius="8dp"
+                    app:cardBackgroundColor="@color/surfaceContainerLowest"
+                    app:strokeColor="@color/outlineVariant"
+                    app:strokeWidth="1dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/ivExpensePhoto"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="centerCrop"
+                            android:visibility="visible"
+                            android:background="@color/imagePlaceholder"
+                            android:contentDescription="Receipt photo"/>
+
+                        <com.google.android.material.floatingactionbutton.FloatingActionButton
+                            android:id="@+id/btnAddPhoto"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+
+                            android:textColor="@color/onPrimary"
+                            android:src="@drawable/ic_add_photo"
+                            app:backgroundTint="@color/primaryColor"
+                            app:tint="@android:color/white"/>
+                    </RelativeLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <!-- Save Button -->
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnSaveExpense"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:text="SAVE EXPENSE"
+                    android:textAllCaps="false"
+                    android:textSize="16sp"
+                    app:cornerRadius="24dp"
+                    app:icon="@drawable/ic_save"
+                    app:iconGravity="textStart"
+                    app:iconPadding="8dp"
+                    app:iconTint="@android:color/white"
+                    style="@style/Widget.MaterialComponents.Button"/>
+            </LinearLayout>
+        </ScrollView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"
+        app:menu="@menu/nav_menu" />
+
+</androidx.drawerlayout.widget.DrawerLayout>

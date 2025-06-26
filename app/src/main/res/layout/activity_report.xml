@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".ReportActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:background="@color/background">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="24dp">
+
+            <com.google.android.material.appbar.MaterialToolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@android:color/transparent"
+                android:elevation="0dp"
+                app:navigationIcon="@drawable/ic_menu"
+                app:title="Monthly Financial Report"
+                app:titleTextColor="@color/primaryDark"
+                app:titleTextAppearance="@style/TextAppearance.MaterialComponents.Headline6"
+                android:layout_marginBottom="16dp"/>
+
+            <!-- Header -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Monthly Financial Report"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="@color/primaryDark"
+                android:gravity="center"
+                android:layout_marginBottom="24dp"
+                android:letterSpacing="0.02"/>
+
+            <!-- Month Selector Card -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="2dp"
+                app:strokeColor="@color/cardBorderLight"
+                app:strokeWidth="1dp"
+                android:layout_marginBottom="24dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="16dp"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/ic_calendar"
+                        android:layout_marginEnd="16dp"
+                        app:tint="@color/primaryDark" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Selected Month"
+                            android:textColor="@color/textSecondary"
+                            android:textSize="12sp"/>
+
+                        <TextView
+                            android:id="@+id/tvSelectedMonth"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Not selected"
+                            android:textSize="16sp"
+                            android:textColor="@color/textPrimary"/>
+                    </LinearLayout>
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnSelectMonth"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="CHANGE"
+                        style="@style/Widget.MaterialComponents.Button.TextButton"
+                        android:textColor="@color/primaryDark"
+                        app:cornerRadius="8dp"/>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- Summary Card -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="2dp"
+                android:layout_marginBottom="24dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <!-- Card Header -->
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Financial Summary"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/primaryDark"
+                        android:layout_marginBottom="16dp"
+                        android:drawablePadding="8dp"
+                        android:drawableStart="@drawable/ic_summary"/>
+
+                    <!-- Total Spent -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="12dp">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Total Spent:"
+                            android:textSize="16sp"
+                            android:textColor="@color/textPrimary"/>
+
+                        <TextView
+                            android:id="@+id/tvTotalSpent"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="R0.00"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            android:textColor="@color/expenseRed"/>
+                    </LinearLayout>
+
+                    <!-- Budget Goal -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="12dp">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Budget Goal:"
+                            android:textSize="16sp"
+                            android:textColor="@color/textPrimary"/>
+
+                        <TextView
+                            android:id="@+id/tvBudgetGoal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Not set"
+                            android:textSize="16sp"
+                            android:textColor="@color/textSecondary"/>
+                    </LinearLayout>
+
+                    <!-- Progress Bar -->
+                    <com.google.android.material.progressindicator.LinearProgressIndicator
+                        android:layout_width="match_parent"
+                        android:layout_height="8dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="16dp"
+                        app:trackColor="@color/progressBackground"
+                        app:trackCornerRadius="4dp"
+                        app:indicatorColor="@color/primaryLight"/>
+
+                    <!-- Category Summary -->
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Category Breakdown"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/textPrimary"
+                        android:layout_marginBottom="8dp"/>
+
+                    <TextView
+                        android:id="@+id/tvCategorySummary"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="No data available"
+                        android:textSize="14sp"
+                        android:textColor="@color/textSecondary"
+                        android:layout_marginBottom="16dp"/>
+
+                    <!-- Achievements -->
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Achievements"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/textPrimary"
+                        android:layout_marginBottom="8dp"/>
+
+                    <TextView
+                        android:id="@+id/tvAchievements"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="No achievements this month"
+                        android:textSize="14sp"
+                        android:textColor="@color/textSecondary"/>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- PDF Generation Button -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnGeneratePdf"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:text="Generate PDF Report"
+                android:textSize="16sp"
+                android:textAllCaps="false"
+                app:icon="@drawable/ic_pdf"
+                app:iconGravity="textStart"
+                app:iconPadding="8dp"
+                app:iconTint="@android:color/white"
+                app:cornerRadius="24dp"
+                style="@style/Widget.MaterialComponents.Button"
+                android:layout_marginTop="8dp"/>
+
+            <!-- Preview Card -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="12dp"
+                android:layout_marginTop="24dp"
+                android:visibility="gone"
+                android:id="@+id/cardPreview">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Report Preview"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/textPrimary"
+                        android:padding="16dp"
+                        android:paddingBottom="8dp"/>
+
+                    <ImageView
+                        android:id="@+id/ivReportPreview"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:scaleType="centerInside"
+                        android:background="@color/imagePlaceholder"
+                        android:padding="16dp"/>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+        </LinearLayout>
+    </ScrollView>
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"
+        app:menu="@menu/nav_menu" />
+
+</androidx.drawerlayout.widget.DrawerLayout>

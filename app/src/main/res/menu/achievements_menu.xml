@@ -1,0 +1,72 @@
+<!-- res/menu/achievements_menu.xml -->
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- Filter menu item with dropdown -->
+    <item
+        android:id="@+id/action_filter"
+        android:icon="@drawable/ic_filter"
+        android:title="@string/filter"
+        app:showAsAction="ifRoom">
+        <menu>
+            <!-- Group for radio button behavior -->
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/action_filter_all"
+                    android:checked="true"
+                    android:title="@string/all_achievements"/>
+                <item
+                    android:id="@+id/action_filter_earned"
+                    android:title="@string/earned"/>
+                <item
+                    android:id="@+id/action_filter_locked"
+                    android:title="@string/locked"/>
+                <item
+                    android:id="@+id/action_filter_budget"
+                    android:title="@string/budget_goals"/>
+                <item
+                    android:id="@+id/action_filter_streaks"
+                    android:title="@string/streaks"/>
+            </group>
+        </menu>
+    </item>
+
+
+    <!-- Sort menu item with dropdown -->
+    <item
+        android:id="@+id/action_sort"
+        android:icon="@drawable/ic_sort"
+        android:title="@string/sort"
+        app:showAsAction="ifRoom">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/action_sort_newest"
+                    android:checked="true"
+                    android:title="@string/newest_first"/>
+                <item
+                    android:id="@+id/action_sort_oldest"
+                    android:title="@string/oldest_first"/>
+                <item
+                    android:id="@+id/action_sort_rarity"
+                    android:title="@string/rarity"/>
+                <item
+                    android:id="@+id/action_sort_alphabetical"
+                    android:title="@string/a_z"/>
+            </group>
+        </menu>
+    </item>
+
+    <!-- Info/help action -->
+    <item
+        android:id="@+id/action_info"
+        android:icon="@drawable/ic_info"
+        android:title="@string/about_achievements"
+        app:showAsAction="ifRoom"/>
+
+    <!-- Hidden refresh action for swipe-to-refresh alternative -->
+    <item
+        android:id="@+id/action_refresh"
+        android:title="@string/refresh"
+        app:showAsAction="never"/>
+</menu>

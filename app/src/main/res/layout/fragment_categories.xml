@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".UI.CategoriesFragment">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/surfaceContainerLowest">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <!-- App Bar -->
+            <com.google.android.material.appbar.MaterialToolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@color/surfaceContainerLowest"
+                app:title="Expense Categories"
+                app:titleTextColor="@color/onSurface"
+                app:navigationIcon="@drawable/ic_menu"
+                app:elevation="0dp"
+                android:elevation="0dp"/>
+
+            <!-- Add Category Button -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnAddCategory"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:text="Add New Category"
+                style="@style/Widget.Material3.Button.OutlinedButton"
+                app:icon="@drawable/ic_add"
+                app:iconTint="@color/primary"
+                app:strokeColor="@color/outline"
+                android:textColor="@color/primary"
+                app:cornerRadius="8dp"/>
+
+            <!-- Empty State -->
+            <LinearLayout
+                android:id="@+id/emptyState"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="32dp"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/ic_empty_categories"
+                    android:layout_marginBottom="16dp"
+                    app:tint="@color/white_alpha_60" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="No Categories Yet"
+                    android:textAlignment="center"
+                    android:textSize="18sp"
+                    android:textColor="@color/onSurface"
+                    android:layout_marginBottom="8dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Add your first category to start organizing expenses"
+                    android:textAlignment="center"
+                    android:textSize="14sp"
+                    android:textColor="@color/black"/>
+            </LinearLayout>
+
+            <!-- Categories List -->
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvCategories"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:clipToPadding="false"
+                android:paddingBottom="16dp"
+                android:overScrollMode="never"/>
+
+            <!-- Bottom padding for FAB -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="72dp"
+                android:visibility="invisible"/>
+
+            <!-- Floating Action Button -->
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fabAddCategory"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|end"
+                android:layout_margin="24dp"
+                android:contentDescription="Add category"
+                app:backgroundTint="@color/primaryContainer"
+                app:tint="@color/onPrimaryContainer"
+                app:srcCompat="@drawable/ic_add"
+                app:elevation="4dp"/>
+        </LinearLayout>
+    </FrameLayout>
+
+    <!-- Navigation View -->
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"
+        app:headerLayout="@layout/nav_header"
+        app:menu="@menu/nav_menu" />
+
+</androidx.drawerlayout.widget.DrawerLayout>

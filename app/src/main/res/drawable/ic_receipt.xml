@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+
+    <!-- Receipt outline with zigzag bottom -->
+    <path
+        android:fillColor="#000000"
+        android:pathData="M21,2v20l-3,-2.25L15,22l-3,-2.25L9,22l-3,-2.25L3,22V2h18zM17,13H7v2h10v-2zM17,7H7v2h10V7zM7,11h10v2H7v-2z"/>
+</vector>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color> <!-- Material Purple 500 -->
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="under_budget">#FF4CAF50</color>
+    <color name="over_budget">#FFF44336</color>
+    <color name="on_budget">#FF2196F3</color>
+
+    <color name="gray">#FF808080</color>
+    <!-- Primary colors -->
+    <color name="text_primary">#FFFFFFFF</color>  <!-- 87% black -->
+    <color name="text_secondary">#99000000</color>  <!-- 60% black -->
+
+    <color name="error_red">#FF0000</color> <!-- Pure red -->
+
+    <color name="colorImagePlaceholder">#F5F5F5</color>
+
+
+    <color name="primaryColor">#6200EE</color>
+    <color name="background">#F9F6FC</color>
+    <color name="textSecondary">#757575</color>
+    <color name="cardStroke">#E0E0E0</color>
+    <color name="imagePlaceholder">#EEEEEE</color>
+
+    <color name="primaryDark">#3700B3</color>
+    <color name="primaryLight">#BB86FC</color>
+    <color name="backgroundLight">#99000000</color>
+    <color name="textPrimary">#99000000</color>
+
+    <color name="cardBorderLight">#E0E0E0</color>
+    <color name="expenseRed">#B00020</color>
+    <color name="progressBackground">#F5F5F5</color>
+
+    <!-- Material 3 Color Scheme -->
+    <color name="primary">#4285F4</color>
+    <color name="primaryContainer">#EADDFF</color>
+    <color name="onPrimary">#FFFFFF</color>
+    <color name="surface">#FFFBFE</color>
+    <color name="surfaceVariant">#E7E0EC</color>
+    <color name="onSurface">#1C1B1F</color>
+    <color name="onSurfaceVariant">#49454F</color>
+    <color name="outlineVariant">#CAC4D0</color>
+    <color name="progressTrack">#E7E0EC</color>
+    <color name="progressIndicator">#6750A4</color>
+
+
+    <color name="surfaceContainerLowest">#FFFBFE</color>
+
+    <color name="onPrimaryContainer">#21005D</color>
+    <color name="outline">#79747E</color>
+
+
+
+    <color name="error">#B3261E</color>
+
+
+    <color name="surfaceContainerHigh">#E7E0EC</color>
+    <color name="surfaceContainerHighest">#F3EDF7</color>
+
+
+    <!-- Achievement Fragment Colors -->
+    <color name="background_color">#FFFBFE</color>
+    <color name="primary_text_color">#1C1B1F</color>
+    <color name="secondary_text_color">#49454F</color>
+    <color name="tertiary_text_color">#79747E</color>
+    <color name="primary_color">#6750A4</color>
+    <color name="card_stroke_color">#E7E0EC</color>
+    <color name="divider_color">#E7E0EC</color>
+    <color name="progress_track_color">#E7E0EC</color>
+
+
+    <!-- Add these colors if they don't exist -->
+    <color name="success_color">#4CAF50</color>
+    <color name="warning_color">#FF9800</color>
+    <color name="error_color">#F44336</color>
+
+    <color name="chip_background">#CD7F71</color> <!-- Bronze -->
+    <!-- Achievement chip colors -->
+    <color name="chip_common_background">#CD7F32</color> <!-- Bronze -->
+    <color name="chip_epic_background">#C0C0C0</color>  <!-- Silver -->
+    <color name="chip_rare_background">#FFD700</color>  <!-- Gold -->
+
+    <!-- colors.xml -->
+
+    <color name="white_alpha_60">#99FFFFFF</color>
+
+    <color name="achievement_earned_bg">#FFFFFF</color>
+    <color name="achievement_locked_bg">#F5F5F5</color>
+
+
+
+    <color name="on_surface">#FF1B1B1B</color> <!-- Dark color for light theme -->
+    <color name="on_surface_variant">#FF49454F</color> <!-- Medium emphasis variant -->
+
+    <color name="green_500">#4CAF50</color>
+    <color name="progress_track">#E0E0E0</color>
+    <color name="progress_indicator">#4CAF50</color>
+    <color name="gray_200">#EEEEEE</color>
+</resources>
