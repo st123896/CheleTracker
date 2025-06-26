@@ -130,3 +130,31 @@ View reports and generate PDFs
 Check achievements for financial milestones
 
 Analyze spending patterns with charts
+
+
+Dependencies
+Key dependencies include:
+
+AndroidX libraries (Navigation, Room, Lifecycle)
+
+Material Design Components
+
+MPAndroidChart (for graphs)
+
+Glide (for image loading)
+
+PDF generation libraries
+
+Contributing
+Fork the repository
+
+Create a feature branch
+
+Commit your changes
+
+Push to the branch
+
+Create a Pull Request
+
+License
+This project is licensed under the MIT License - see the LICENSE file for details.
