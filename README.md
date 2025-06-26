@@ -145,6 +145,208 @@ Glide (for image loading)
 
 PDF generation libraries
 
+Architecture
+The app follows the MVVM (Model-View-ViewModel) architecture pattern with the following components:
+
+Data Layer
+Repositories: Mediate between data sources (Room Database) and ViewModels
+
+Room Database: Local SQLite database with DAO interfaces
+
+SharedPreferences: For simple key-value storage
+
+Domain Layer
+ViewModels: Provide data to UI and handle business logic
+
+Use Cases: Encapsulate specific business rules (handled within ViewModels)
+
+Presentation Layer
+Activities: Manage UI components and navigation
+
+Fragments: Reusable UI components
+
+Adapters: Handle RecyclerView data binding
+
+Key Components
+Repositories
+AchievementRepository
+
+insert(achievement: Achievement): Stores new achievements
+
+getAchievementsByUser(userId: Int): Retrieves user's achievements
+
+getAchievementByType(userId: Int, type: String): Checks for specific achievement
+
+BudgetGoalRepository
+
+insert(goal: BudgetGoal): Stores budget goals
+
+getBudgetGoal(userId: Int, month: Int, year: Int): Retrieves monthly budget
+
+update(goal: BudgetGoal): Updates existing budget goals
+
+CategoryRepository
+
+insert(category: Category): Adds new expense categories
+
+getCategoriesByUser(userId: Int): Gets user's categories
+
+delete(category: Category): Removes categories
+
+ExpenseRepository
+
+insert(expense: Expense): Logs new expenses
+
+Various query methods for expense retrieval by date, category, etc.
+
+delete(expense: Expense): Removes expenses
+
+StreakRepository
+
+Tracks user streaks for consistent expense logging
+
+Methods for maintaining and resetting streaks
+
+UserRepository
+
+Handles user authentication and registration
+
+getUser(username: String, password: String): Validates credentials
+
+checkUsernameExists(username: String): Verifies username availability
+
+ViewModels
+AchievementViewModel
+
+Manages achievement data and business logic
+
+Tracks user accomplishments and unlocks new achievements
+
+BudgetGoalViewModel
+
+Handles budget setting and tracking
+
+Calculates budget progress and achievements
+
+Integrates with ExpenseViewModel for spending analysis
+
+CategoryViewModel
+
+Manages expense category operations
+
+Provides category data to UI components
+
+ExpenseViewModel
+
+Core expense management functionality
+
+Handles expense creation, retrieval, and deletion
+
+Manages notifications and streaks
+
+Integrates with BudgetGoalViewModel for spending analysis
+
+StreakViewModel
+
+Tracks and maintains user streaks
+
+Handles streak achievements and resets
+
+UserViewModel
+
+Manages user authentication flow
+
+Handles registration and login processes
+
+Database Structure
+The Room Database contains the following entities:
+
+User: Stores user credentials and preferences
+
+Expense: Records all expense transactions
+
+Category: Expense categorization system
+
+BudgetGoal: Monthly budget targets
+
+Achievement: Tracks user accomplishments
+
+Streak: Maintains logging streaks
+
+Key Features
+Budget Management
+Set monthly budget ranges (min/max)
+
+Visual progress tracking
+
+Budget achievement unlocks
+
+Spending analysis against budget
+
+Expense Tracking
+Add expenses with photos
+
+Categorize expenses
+
+Filter by date ranges
+
+View spending patterns
+
+Achievements System
+Streak tracking (daily logging)
+
+Budget adherence rewards
+
+Milestone accomplishments
+
+Visual badge display
+
+Notifications
+Expense logging alerts
+
+Budget threshold warnings
+
+Achievement unlocks
+
+Setup Instructions
+Prerequisites
+Android Studio (latest version)
+
+Android SDK (API level 24+)
+
+Kotlin plugin
+
+Installation
+Clone the repository
+
+Open the project in Android Studio
+
+Sync Gradle dependencies
+
+Build and run the app
+
+Configuration
+Update build.gradle files with your preferred versions
+
+Configure file provider paths in AndroidManifest.xml
+
+Set up notification channels as needed
+
+Add required permissions for camera and storage
+
+Dependencies
+Key dependencies include:
+
+AndroidX libraries (Navigation, Room, Lifecycle)
+
+Material Design Components
+
+MPAndroidChart (for graphs)
+
+Glide (for image loading)
+
+PDF generation libraries
+
 Contributing
 Fork the repository
 
