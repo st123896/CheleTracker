@@ -214,6 +214,9 @@ Build > Generate Signed Bundle / APK..
 /app/build/outputs/apk/release/
 ==================================================
 
+
+
+
 ![APK Build Screenshot](https://github.com/user-attachments/assets/363bb7c0-984c-453f-ba7d-979fc4532b12)
 
 
