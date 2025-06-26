@@ -156,7 +156,7 @@ Material Components
 
 
 
-
+-------------------------------------------------------------------------------------------
 
 
 🙌 Acknowledgements
@@ -165,6 +165,21 @@ Material Components
 -Glide by Bumptech
 
 -Android Jetpack & Material Design Components
+====================================================================================
+References:
+
+-This project adapts some code from this source:
+
+-Author: Mkr Developer
+
+-Source:https://youtu.be/i8mObAOJaRQ?si=gyDZXVf9mpvTM0Rv
+
+-Source :Head First Android Development A Brain-Friendly Guide, 2nd Edition
+
+Author
+
+-Your Name - Tshepiso Zikhali
+
 
 
 
