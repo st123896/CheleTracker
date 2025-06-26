@@ -93,5 +93,4 @@ The **Expense Tracker App** is an Android application designed to help users man
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/your-username/expense-tracker-app.git
-   cd expense-tracker-app
+  https://github.com/st123896/CheleTracker.git
