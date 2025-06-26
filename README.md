@@ -124,15 +124,17 @@ PDF Generation Libraries
 
 Material Components
 
+
+
 📚 Usage
-Register or Login
+-Register or Login
 
-Use the Navigation Drawer to switch between screens
+-Use the Navigation Drawer to switch between screens
 
-Add expenses with categories and optional receipts
+-Add expenses with categories and optional receipts
 
-Set and monitor your monthly budget
+-Set and monitor your monthly budget
 
-Track achievements and view spending reports
+-Track achievements and view spending reports
 
-Export reports as PDFs and review progress charts
+-Export reports as PDFs and review progress charts
