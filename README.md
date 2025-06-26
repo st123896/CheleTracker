@@ -94,3 +94,45 @@ The **Expense Tracker App** is an Android application designed to help users man
 1. **Clone the repository:**
    ```bash
   https://github.com/st123896/CheleTracker.git
+
+
+  Open in Android Studio
+
+Sync Gradle dependencies
+
+Build and run the app
+
+⚙️ Configuration
+Update build.gradle versions as needed
+
+Configure file provider paths in AndroidManifest.xml
+
+Add required permissions for camera and storage
+
+Set up notification channels for alerts
+
+🔌 Dependencies
+AndroidX Navigation
+
+Room Persistence Library
+
+MPAndroidChart – Charting library
+
+Glide – Image loading
+
+PDF Generation Libraries
+
+Material Components
+
+📚 Usage
+Register or Login
+
+Use the Navigation Drawer to switch between screens
+
+Add expenses with categories and optional receipts
+
+Set and monitor your monthly budget
+
+Track achievements and view spending reports
+
+Export reports as PDFs and review progress charts
