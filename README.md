@@ -161,7 +161,7 @@ Material Components
 
 🙌 Acknowledgements
 -MPAndroidChart by PhilJay
-
+-----------------------------------------------------------------------------------------
 -Glide by Bumptech
 
 -Android Jetpack & Material Design Components
