@@ -110,7 +110,7 @@ Configure file provider paths in AndroidManifest.xml
 Add required permissions for camera and storage
 
 Set up notification channels for alerts
-
+========================================================
 🔌 Dependencies
 AndroidX Navigation
 
@@ -130,7 +130,7 @@ Material Components
 
 
 
-
+-------------------------------------------------------------
 📚 Usage
 -Register or Login
 
@@ -144,7 +144,7 @@ Material Components
 
 -Export reports as PDFs and review progress charts
 
-
+========================================================
 
 
 
