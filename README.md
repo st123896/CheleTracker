@@ -188,11 +188,33 @@ my video presentation YT Link : https://youtube.com/shorts/FdEmFjQUKus?si=5qq95X
 
 ----------------------------------------------------------------------------------------
 
-The Built apk for the app 
-![image](https://github.com/user-attachments/assets/363bb7c0-984c-453f-ba7d-979fc4532b12)
+## 📦 APK Build Instructions
 
-just select Generate App Bundles or APKs then click Generate APKS
+To generate the APK or App Bundle for the Expense Tracker App in Android Studio:
 
+### 🔨 Steps
+
+1. Open the project in **Android Studio**.
+2. Navigate to the top menu and click on:
+
+============================================================
+Build > Generate Signed Bundle / APK..
+
+3. In the dialog, choose one of the following:
+- **Android App Bundle** (.aab) — for Google Play Store
+- **APK** (.apk) — for direct installation or testing
+4. Click **Next** and fill in the **Key Store** credentials:
+- Key store path
+- Key alias
+- Password
+5. Select the **release** build variant and click **Finish**.
+6. Wait for the build to complete. You’ll find the output in:
+
+-------------------------------------
+/app/build/outputs/apk/release/
+==================================================
+
+![APK Build Screenshot](https://github.com/user-attachments/assets/363bb7c0-984c-453f-ba7d-979fc4532b12)
 
 
 
